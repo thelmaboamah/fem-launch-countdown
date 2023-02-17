@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;600;700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background: url(images/bg-stars.svg),
+    linear-gradient(to top, #2f2439, #1a1823);
+  font-family: "Red Hat Text", sans-serif;
+  text-align: center;
+}
+
+main {
+  height: 100vh;
+  background: url(images/pattern-hills.svg) no-repeat bottom;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: #fff;
+  padding: 110px 0;
+  font-size: 1.5rem;
+}
+
+h1,
+p {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.time h2 {
+  color: hsl(345, 95%, 68%);
+  font-size: 6rem;
+  background: hsl(236, 21%, 26%);
+  width: 150px;
+  height: 130px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 12px 3px 0 hsl(234, 17%, 12%);
+}
+
+.time p {
+  color: hsl(237, 18%, 59%);
+  font-size: 1.25rem;
+  margin-top: 25px;
+}
+
+/* Social media icons */
+.socials-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: auto;
+  margin-bottom: 60px;
+}
+
+.social-link img {
+  width: 35px;
+  cursor: pointer;
+}
+
+.social-link img:hover {
+  filter: hue-rotate(95deg) saturate(2.75);
+}
+
+/* Attribution */
+.attribution {
+  display: none;
+  padding: 20px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
